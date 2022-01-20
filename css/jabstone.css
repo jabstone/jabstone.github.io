@@ -1,0 +1,428 @@
+* {
+    /*border: 1px solid red !important;*/
+}
+
+a:link { color: inherit; text-decoration: none; } 
+a:hover { color: inherit; text-decoration: none; } 
+a:visited { color: inherit; text-decoration: none; } 
+a:active { color: inherit; text-decoration: none; } 
+
+.idea-container {
+    margin:auto;
+    margin-top: 15px;
+    max-width: 1494px;
+}
+
+.header-menu-container {
+    float: right;
+    margin-right: 7%;
+}
+
+.header-menu {      
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;    
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    color: #88488f;
+}
+
+.header-menu span {
+    margin-left: 20px;    
+} 
+
+.header-logo-container {
+    margin-left: 2%;
+}
+
+.header-logo {  
+    margin-left: 30%;
+}
+
+.img-responsive {
+    margin: auto;
+}
+
+.footer-menu {         
+    color: #D7D7D7;    
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;   
+    line-height: 55px;   
+    margin: auto;
+    display: block;
+}
+
+.footer-menu span {
+    margin-left: 20px; 
+}
+
+.footer-logo {  
+    margin-left: 20%;
+}
+
+.footer-social {
+    line-height: 125px;   
+    text-align: center;
+    margin: auto;   
+    display: block;
+    min-height: 1em; 
+    padding: 0px;
+}
+
+h1 {
+    font-family: 'Enriqueta', serif;
+    font-size: 500%;
+    font-weight: 400;   
+    margin: 40px 0px 20px 0px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    font-weight: 300;    
+    color: #727272;
+    margin-right: 7%;
+    margin-left: 7%;
+    line-height: 1.5em;
+}
+
+
+.normal-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    color: #676767;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 1.4em;
+    line-height: 1.4em;        
+}
+
+.section-header {
+    margin-left: 7%;
+}
+
+.section-program {
+    background-color: #88488f;
+}
+
+.section-program p {
+    color: #FFFFFF;
+}
+
+.section-donate {
+    background-color: #97bde2;
+}
+
+.section-donate p {
+    color: #FFFFFF;
+    padding-top: 30px;
+}
+
+.section-donate p {
+    font-family: 'Enriqueta', serif;
+    font-size: 2.2em;
+    font-weight: 400;    
+    text-align: center;
+}
+
+.section-footer {
+    background-color: #404040;
+}
+
+.button-learn-more-purple {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 400;   
+    color: #88488f;
+    border: 2px solid #88488f;    
+    padding: 15px 50px 15px 50px;
+    cursor: pointer;
+}
+
+.button-learn-more-white {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: 400;   
+    color: white;
+    border: 2px solid white;    
+    padding: 15px 50px 15px 50px;
+    cursor: pointer;
+}
+
+.section-aboutus {
+    background-color: #F2F2F2  ;
+} 
+
+#button-donate {
+    display: block;
+    background: url(../images/paypal.png) no-repeat top;
+}
+
+#button-donate:active {
+    display: block;
+    background: url(../images/paypal-active.png) no-repeat top;
+}
+
+.donate-bubble-container {
+	text-align: center;
+	display: table;
+	margin: auto;
+}
+.donate-bubble {
+	 border-radius: 15px;
+    border: 2px solid #727272;
+    background-color: #eeeeee;
+    padding: 10px;
+    width: 240px;
+    height: 245px;
+    margin-left: 20px;
+    font-size: 1.6em;
+    margin-top: 10px;
+    display: inline-grid;
+    cursor: pointer;
+}
+
+.donate-bubble span {
+	font-weight: bold;
+	font-size: 1.8em;
+}
+
+
+.idea-purple {
+    color: #88488f;
+}
+
+.idea-gray {
+    color: #727272;
+}
+
+.idea-dark-gray {
+    color: #404040;
+}
+
+.idea-white {
+    color: white;
+}
+
+.idea-blue {
+    color: #97bde2;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+    .header-menu {
+        line-height: 100px;   
+    }       
+    .button-learn-more-purple {
+        font-size: 26px;
+    }
+    .button-learn-more-white {
+        font-size: 26px;
+    }     
+    .footer-social {
+        line-height: 125px;
+        margin: auto;
+    }              
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-menu {
+        line-height: 100px;        
+    }        
+    .button-learn-more-purple {
+        font-size: 26px;
+    }
+    .button-learn-more-white {
+        font-size: 26px;
+    }        
+    .footer-logo     {
+        text-align: center;
+        margin: auto;
+    }       
+    .footer-social {
+        text-align: center;
+        margin: auto;
+        display: flex;
+    }        
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 350%;
+    }    
+    p {
+        font-size: 29px;  
+        line-height: 1.6em;
+    }       
+    .normal-text {
+        font-size: 24px;
+        line-height: 1.6em;    
+    } 
+    .header-menu-container {
+        float: none;
+    }    
+    .header-menu {
+        line-height: 70px;
+        margin: auto;
+        text-align: center;
+    }       
+    .header-logo-container {
+        margin: auto;
+    }       
+    .header-logo {
+        display: block;
+        margin: auto;
+    }        
+    .button-learn-more-purple {
+        font-size: 22px;
+    }
+    .button-learn-more-white {
+        font-size: 22px;
+    }     
+    .section-donate p {
+        margin: auto;
+        font-size: 3.8em;
+    }      
+    .footer-logo     {
+        text-align: center;
+        margin: auto;
+    }     
+    .footer-social {
+        text-align: center;
+        display: block;
+        margin: auto;
+        line-height: 80px;  
+    }     
+    .footer-menu {
+        line-height: 40px;   
+        display: block;
+    }     
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 491px) and (max-width: 767px) {
+    h1 {
+        font-size: 300%;
+    }    
+    p {
+        font-size: 25px;  
+        line-height: 1.6em;
+    }       
+    .normal-text {
+        font-size: 22px;
+        line-height: 1.6em;    
+    }     
+    .header-menu-container {
+        float: none;
+        margin: auto;
+    }        
+    .header-menu {
+        line-height: 50px;
+        text-align: center;
+    } 
+    .header-menu span {
+        margin-left: 10px;
+    }    
+    .header-logo-container {
+        margin: auto;
+    }       
+    .header-logo {
+        display: block;
+        margin: auto;
+    } 
+    .footer-logo     {
+        text-align: center;
+        margin: auto;
+    }     
+    .footer-social {
+        line-height: 80px;
+    }     
+    .footer-menu {
+        line-height: 25px;   
+        display: block;
+    }     
+    .button-learn-more-purple {
+        font-size: 20px;
+    }
+    .button-learn-more-white {
+        font-size: 20px;
+    }
+    .section-donate p {
+        margin: auto;
+        font-size: 3em;
+    }    
+    form input[type="image"] {
+        width: 290px;
+    }        
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 490px) {
+    h1 {
+        font-size: 250%;
+    }        
+    p {
+        font-size: 24px;  
+        line-height: 1.5em;
+    }       
+    .normal-text {
+        font-size: 21px;
+        line-height: 1.5em;    
+    }     
+    .header-menu-container {
+        float: none;
+        margin: auto;
+    }        
+    .header-menu {
+        line-height: 50px;
+        text-align: center;
+    } 
+    .header-menu span {
+        margin-left: 5px;
+    }    
+    .header-logo-container {
+        margin: auto;
+    }       
+    .header-logo {
+        display: block;
+        margin: auto;
+    } 
+    .footer-menu span {
+        margin-left: 4px;
+    }
+    .footer-menu {
+        line-height: 40px; 
+        display: block;
+    }    
+    .footer-logo     {
+        text-align: center;
+        margin: auto;
+    } 
+    .footer-social {
+        line-height: 80px;
+    }     
+    .button-learn-more-purple {
+        font-size: 18px;
+    }
+    .button-learn-more-white {
+        font-size: 18px;
+    }    
+    .section-donate p {
+        margin: auto;
+        font-size: 2.5em;
+    }    
+    form input[type="image"] {
+        width: 230px;
+    }        
+}
