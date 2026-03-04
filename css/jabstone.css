@@ -23,11 +23,11 @@
      --chrome-bar: #3730a3; --chrome-border: #4338ca; --chrome-hi: #c4b5fd;
 */
 :root {
-    --chrome-bg:       #2d333d;
+    --chrome-bg: #2d333d;
     --chrome-bg-alpha: rgba(45, 51, 61, 0.97);
-    --chrome-bar:      #363d48;
-    --chrome-border:   #464f5c;
-    --chrome-hi:       #ff9800;
+    --chrome-bar: #363d48;
+    --chrome-border: #464f5c;
+    --chrome-hi: #ff9800;
 }
 
 * {
@@ -214,14 +214,19 @@ a:focus-visible {
 .hero-screenshots li {
     flex: 1 1 0;
     min-width: 0;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e2e8f0;
 }
 
 .hero-screenshots img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
     display: block;
-    border-radius: 10px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    border: 1px solid #e2e8f0;
 }
 
 .hero-content {
@@ -274,7 +279,7 @@ a:focus-visible {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 
@@ -309,6 +314,16 @@ a:focus-visible {
     background: #f0f7ff;
     border-color: #bbdefb;
     border-left: 4px solid #42a5f5;
+}
+
+.card-ios:hover {
+    box-shadow: 0 4px 24px rgba(52, 199, 89, 0.2);
+}
+
+.card-ios {
+    background: #f0fff4;
+    border-color: #bbf7d0;
+    border-left: 4px solid #34c759;
 }
 
 .card-icon {
