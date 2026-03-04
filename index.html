@@ -14,13 +14,15 @@
 
 <body>
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="site-header">
         <div class="container header-inner">
             <a href="index.html" class="logo">
                 <span class="logo-text">JABstone</span>
                 <span class="logo-tagline">Every voice deserves to be heard</span>
             </a>
-            <nav class="nav">
+            <nav class="nav" aria-label="Site navigation">
                 <a href="#platform">Platform</a>
                 <a href="#tools">Tools</a>
                 <a href="#ios-app">iOS App</a>
@@ -29,9 +31,11 @@
         </div>
     </header>
 
-    <div class="announce-bar">
+    <div class="announce-bar" role="status" aria-live="polite">
         Coming Soon &mdash; The JABstone Speech Platform is currently in beta testing
     </div>
+
+    <main id="main-content">
 
     <section class="hero fade-in" id="platform">
         <div class="container hero-content">
@@ -40,11 +44,11 @@
                 communicate using AI models built specifically for them. No two voices are alike&nbsp;&mdash; and
                 neither are our models.</p>
         </div>
-        <div class="hero-screenshots">
-            <img src="images/screenshot-1.jpg" alt="Speech Studio screenshot">
-            <img src="images/screenshot-7.jpg" alt="Platform screenshot">
-            <img src="images/screenshot-5.jpg" alt="Speech Editor screenshot">
-            <img src="images/screenshot-6.jpg" alt="Platform screenshot">
+        <div class="hero-screenshots" aria-label="Platform screenshots" role="img">
+            <img src="images/screenshot-1.jpg" alt="Speech Studio session recording interface">
+            <img src="images/screenshot-7.jpg" alt="JABstone platform overview">
+            <img src="images/screenshot-5.jpg" alt="Speech Editor waveform review interface">
+            <img src="images/screenshot-6.jpg" alt="Custom AI model training results">
         </div>
     </section>
 
@@ -56,7 +60,7 @@
 
             <div class="card-grid">
                 <div class="card card-studio">
-                    <div class="card-icon">&#127908;</div>
+                    <div class="card-icon" aria-hidden="true">&#127908;</div>
                     <h3>Speech Studio</h3>
                     <p>Uses AI to generate custom speech sessions that simulate real-world scenarios defined for each
                         user&nbsp;&mdash; conversations at school, orders at a restaurant, interactions with family.
@@ -64,13 +68,13 @@
                         that lead to better recognition models.</p>
                 </div>
                 <div class="card card-editor">
-                    <div class="card-icon">&#9986;&#65039;</div>
+                    <div class="card-icon" aria-hidden="true">&#9986;&#65039;</div>
                     <h3>Speech Editor</h3>
                     <p>Provides tools to review, trim, and clean up recordings so every sample that goes into model
                         training is high quality. Better data means a more accurate model.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon">&#129504;</div>
+                    <div class="card-icon" aria-hidden="true">&#129504;</div>
                     <h3>Custom AI Models</h3>
                     <p>Each model is fine-tuned on an individual&rsquo;s actual speech patterns&nbsp;&mdash; including
                         atypical pronunciation, apraxia, and other speech differences. The result is recognition that
@@ -94,7 +98,7 @@
 
     <section class="legacy fade-in" id="jabtalk">
         <div class="container">
-            <h3>JABtalk&nbsp;&mdash; Where It All Started</h3>
+            <h2>JABtalk&nbsp;&mdash; Where It All Started</h2>
             <p>JABtalk launched in 2012 at a time when there were no free AAC apps available on Android. It went on to
                 be used by hundreds of thousands of people around the world. Today, the AAC landscape has grown
                 tremendously, and advances in AI have opened up new possibilities for supporting people with speech
@@ -104,6 +108,8 @@
                 and sideloaded onto Android devices.</p>
         </div>
     </section>
+
+    </main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
