@@ -3,6 +3,33 @@
    Clean light theme, Inter font, responsive
    ============================================================ */
 
+/* ---------- Color Scheme ----------
+   Swap the :root block to change the header/footer palette.
+
+   Option 1 – Deep teal (current):
+     --chrome-bg: #0d3d3d; --chrome-bg-alpha: rgba(13,61,61,0.97);
+     --chrome-bar: #0f4a4a; --chrome-border: #1a6060; --chrome-hi: #5eead4;
+
+   Option 2 – Deep indigo:
+     --chrome-bg: #231a5e; --chrome-bg-alpha: rgba(35,26,94,0.97);
+     --chrome-bar: #2d2480; --chrome-border: #3d329e; --chrome-hi: #a5b4fc;
+
+   Option 3 – Warm dark green:
+     --chrome-bg: #1a3a2a; --chrome-bg-alpha: rgba(26,58,42,0.97);
+     --chrome-bar: #24492e; --chrome-border: #2d5a38; --chrome-hi: #6ee7b7;
+
+   Option 4 – Soft dark purple:
+     --chrome-bg: #312e81; --chrome-bg-alpha: rgba(49,46,129,0.97);
+     --chrome-bar: #3730a3; --chrome-border: #4338ca; --chrome-hi: #c4b5fd;
+*/
+:root {
+    --chrome-bg:       #2d333d;
+    --chrome-bg-alpha: rgba(45, 51, 61, 0.97);
+    --chrome-bar:      #363d48;
+    --chrome-border:   #464f5c;
+    --chrome-hi:       #ff9800;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -52,7 +79,7 @@ a:focus-visible {
     position: absolute;
     top: -100%;
     left: 8px;
-    background: #0f172a;
+    background: var(--chrome-bg);
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 4px;
@@ -65,7 +92,7 @@ a:focus-visible {
 
 .skip-link:focus {
     top: 8px;
-    outline: 2px solid #93c5fd;
+    outline: 2px solid var(--chrome-hi);
     outline-offset: 4px;
 }
 
@@ -76,8 +103,8 @@ a:focus-visible {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #e2e8f0;
-    background: #1e293b;
-    border-bottom: 1px solid #334155;
+    background: var(--chrome-bar);
+    border-bottom: 1px solid var(--chrome-border);
     padding: 8px 24px;
 }
 
@@ -86,7 +113,7 @@ a:focus-visible {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(15, 23, 42, 0.97);
+    background: var(--chrome-bg-alpha);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -108,7 +135,7 @@ a:focus-visible {
 .logo-text {
     font-family: 'JABstone', serif;
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #ff9800;
     letter-spacing: 0.01em;
     line-height: 1;
     padding-top: 4px;
@@ -127,11 +154,11 @@ a:focus-visible {
 }
 
 .logo:hover .logo-text {
-    color: #93c5fd;
+    color: #ffb74d;
 }
 
 .logo:focus-visible {
-    outline: 2px solid #93c5fd;
+    outline: 2px solid var(--chrome-hi);
     outline-offset: 4px;
     border-radius: 4px;
 }
@@ -151,13 +178,13 @@ a:focus-visible {
 }
 
 .nav a:hover {
-    color: #93c5fd;
+    color: var(--chrome-hi);
     text-decoration: none;
 }
 
 .nav a:focus-visible {
-    color: #93c5fd;
-    outline: 2px solid #93c5fd;
+    color: var(--chrome-hi);
+    outline: 2px solid var(--chrome-hi);
     outline-offset: 4px;
     border-radius: 2px;
 }
@@ -165,7 +192,7 @@ a:focus-visible {
 /* ---------- Hero ---------- */
 .hero {
     text-align: center;
-    padding: 72px 24px 0;
+    padding: 72px 24px 64px;
     background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
 }
 
@@ -318,6 +345,25 @@ a:focus-visible {
     text-align: center;
 }
 
+.ios-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.ios-badge {
+    display: inline-block;
+    margin-top: 24px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff9800;
+    padding: 6px 18px;
+    border-radius: 50px;
+}
+
 .coming-soon-badge {
     display: inline-block;
     font-size: 1.1rem;
@@ -358,7 +404,7 @@ a:focus-visible {
 /* ---------- Footer ---------- */
 .site-footer {
     padding: 32px 24px;
-    background: #0f172a;
+    background: var(--chrome-bg);
     border-top: none;
 }
 
