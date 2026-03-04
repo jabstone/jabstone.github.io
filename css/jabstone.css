@@ -395,7 +395,7 @@ a:focus-visible {
 /* ---------- Support Page ---------- */
 .support-hero {
     text-align: center;
-    padding: 64px 24px 48px;
+    padding: 64px 24px 24px;
     background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
 }
 
@@ -408,7 +408,7 @@ a:focus-visible {
 }
 
 .support-content {
-    padding: 48px 24px 72px;
+    padding: 24px 24px 72px;
     background: #ffffff;
 }
 
